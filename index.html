@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi 76 - Authentic Indian & Nepalese Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #2d1810; background: #faf6f0; }
+        
+        .demo-badge { position: fixed; top: 10px; right: 10px; background: #ff6b6b; color: white; padding: 8px 12px; border-radius: 20px; font-size: 11px; font-weight: 600; z-index: 1000; }
+        
+        header { position: fixed; top: 0; width: 100%; background: #000; z-index: 100; border-bottom: 2px solid #DC143C; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: white; }
+        .logo span { color: #DC143C; }
+        nav a { color: #fff; text-decoration: none; margin: 0 1.5rem; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover { color: #DC143C; }
+        
+        .btn-primary { background: #DC143C; color: white; padding: 0.75rem 1.5rem; border: none; text-decoration: none; font-weight: 600; cursor: pointer; text-transform: uppercase; font-size: 12px; transition: all 0.3s; }
+        .btn-primary:hover { background: #b00937; transform: translateY(-2px); }
+        
+        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+        
+        .hero { margin-top: 70px; min-height: calc(100vh - 70px); background: linear-gradient(135deg, #DC143C, #8B0000); display: flex; align-items: center; justify-content: center; color: white; }
+        .hero-content { text-align: center; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.95; }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header .label { color: #DC143C; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 0.5rem; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #2d1810; margin-bottom: 1rem; }
+        
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .menu-card { background: white; border: 1px solid #e8d7c8; padding: 2rem; border-radius: 8px; transition: all 0.3s; }
+        .menu-card:hover { box-shadow: 0 8px 20px rgba(220, 20, 60, 0.15); transform: translateY(-5px); }
+        .menu-card h3 { color: #2d1810; font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .menu-card .price { color: #DC143C; font-weight: 700; font-size: 1.1rem; }
+        .menu-card p { color: #8B5A3C; font-size: 0.95rem; }
+        
+        .about-section { background: #faf6f0; }
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .feature { background: white; padding: 2rem; border-left: 4px solid #DC143C; }
+        .feature h3 { color: #2d1810; margin-bottom: 0.5rem; }
+        
+        .contact-section { background: #2d1810; color: white; }
+        .contact-section h2 { color: white; }
+        .contact-section .label { color: #FFD700; }
+        .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .contact-card { background: rgba(255,255,255,0.1); padding: 1.5rem; }
+        
+        .whatsapp-btn { display: inline-flex; gap: 0.5rem; background: #25D366; color: white; padding: 0.75rem 1.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; }
+        
+        footer { background: #1a0f0a; color: white; text-align: center; padding: 2rem; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-badge">Demo - Click WhatsApp</div>
+
+    <header>
+        <nav>
+            <div class="logo">DELHI<span>76</span></div>
+            <div style="display: flex; gap: 2rem;">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a id="whatsappNav" href="#" class="btn-primary">Order Online</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="businessName">DELHI 76</h1>
+            <p id="businessDescription">Authentic Indian & Nepalese Cuisine</p>
+            <div class="hero-buttons">
+                <a id="whatsappHero" href="#" class="btn-primary">Order Now</a>
+                <a href="#menu" class="btn-primary" style="background: transparent; border: 2px solid white; color: white;">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="label">Our Heritage</span>
+            <h2>Authentic & Fresh</h2>
+        </div>
+        <div class="about-grid">
+            <div class="feature">
+                <h3>🍛 Traditional Recipes</h3>
+                <p>Passed down through generations with authentic spices</p>
+            </div>
+            <div class="feature">
+                <h3>🥘 Premium Ingredients</h3>
+                <p>Fresh daily supplies from trusted local vendors</p>
+            </div>
+            <div class="feature">
+                <h3>👨‍🍳 Expert Chefs</h3>
+                <p>Experienced culinary artisans crafting every dish</p>
+            </div>
+            <div class="feature">
+                <h3>🏠 Warm Ambience</h3>
+                <p>Perfect for family dinners and celebrations</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="section-header">
+            <span class="label">Popular Dishes</span>
+            <h2>Our Specialties</h2>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Butter Chicken</h3>
+                <div class="price">₹320</div>
+                <p>Tender chicken in creamy tomato and butter sauce</p>
+            </div>
+            <div class="menu-card">
+                <h3>Paneer Tikka Masala</h3>
+                <div class="price">₹280</div>
+                <p>Marinated cottage cheese in aromatic curry</p>
+            </div>
+            <div class="menu-card">
+                <h3>Biryani (Veg/Non-Veg)</h3>
+                <div class="price">₹180-240</div>
+                <p>Fragrant rice cooked with spices and vegetables</p>
+            </div>
+            <div class="menu-card">
+                <h3>Tandoori Naan</h3>
+                <div class="price">₹60</div>
+                <p>Freshly baked traditional Indian bread</p>
+            </div>
+            <div class="menu-card">
+                <h3>Dal Makhani</h3>
+                <div class="price">₹200</div>
+                <p>Creamy lentil curry slow-cooked to perfection</p>
+            </div>
+            <div class="menu-card">
+                <h3>Momos Platter</h3>
+                <div class="price">₹150</div>
+                <p>Nepali dumplings with spicy dipping sauce</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <span class="label">Book a Table</span>
+            <h2>Visit Us</h2>
+        </div>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>📍 Location</h3>
+                <p id="contactLocation">Main Street, Delhi, India</p>
+            </div>
+            <div class="contact-card">
+                <h3>📞 Phone</h3>
+                <p id="contactPhone">+91 98765 43210</p>
+            </div>
+            <div class="contact-card">
+                <h3>🕐 Hours</h3>
+                <p>Daily: 11:00 AM - 11:00 PM</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a id="whatsappFooter" href="#" class="whatsapp-btn">Reserve Table via WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Delhi 76 Restaurant. Serving authentic flavors since 1976.</p>
+    </footer>
+
+    <script src="../assets/inject-data.js"></script>
+    <script>
+        window.TEMPLATE_CATEGORY = 'restaurant';
+    </script>
+</body>
+</html>
